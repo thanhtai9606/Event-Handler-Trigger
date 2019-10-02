@@ -14,9 +14,8 @@ namespace FEPV.Test.MyControls
     {
         const string USER_NAME = "admin";
         const string PASSWORD = "admin";
-        public bool isLogin = false;
-        public delegate void checkLogin(bool value);
-        public checkLogin isValidate;
+        public bool isLogin = false;     
+        public event EventHandler eventHandler;
         public ucLogin()
         {
             InitializeComponent();
@@ -27,16 +26,16 @@ namespace FEPV.Test.MyControls
         {
             if (Username == USER_NAME && Password == PASSWORD)
                 isLogin = true;
-            isValidate(isLogin);
+            eventHandler(this, new MyEvent { Username = Username, isLogin = isLogin });        
         }
         /// <summary>
         /// Just set Username for another control can be get
         /// data from this control
         /// </summary>
         public string Username 
-        { 
-            set =>txtUsername.Text = value;
-            get => txtUsername.Text; 
+        {
+            set { txtUsername.Text = value; }
+            get { return txtUsername.Text; }
         }
         /// <summary>
         /// Just set Password for another control can be get
@@ -44,8 +43,9 @@ namespace FEPV.Test.MyControls
         /// </summary>
         public string Password
         {
-            set => txtPassword.Text = value;
-            get => txtUsername.Text;
+            set { txtPassword.Text = value; }
+            get
+            { return txtPassword.Text; }
         }
     }
 }

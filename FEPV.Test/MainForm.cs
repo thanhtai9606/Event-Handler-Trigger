@@ -18,18 +18,22 @@ namespace FEPV.Test
         public MainForm()
         {
             InitializeComponent();
-            Load += MainForm_Load;
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
             WorkSpace.Show(login);
-            login.isValidate = new ucLogin.checkLogin(isLogin);
-
+            login.eventHandler += Login_eventHandler;
+            main.LogOut += Main_LogOut;
         }
-        public void isLogin(bool value)
+
+        private void Main_LogOut(object sender, EventArgs e)
         {
-            if (value)
+            var args = (MyEvent)e;
+            if (!args.isLogin)
+                WorkSpace.Show(login);
+        }
+
+        private void Login_eventHandler(object sender, EventArgs e)
+        {
+            var args = (MyEvent)e;
+            if (args.isLogin)
             {
                 main.Username = login.Username;
                 WorkSpace.Show(main);
@@ -37,5 +41,6 @@ namespace FEPV.Test
             else
                 MessageBox.Show("Wrong Username or Password!");
         }
+
     }
 }

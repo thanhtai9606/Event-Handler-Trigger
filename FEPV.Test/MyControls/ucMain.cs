@@ -15,7 +15,15 @@ namespace FEPV.Test.MyControls
         public ucMain()
         {
             InitializeComponent();
+            btnLogOut.Click += BtnLogOut_Click;
+
         }
+        public event EventHandler LogOut;
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            LogOut(this, new MyEvent { isLogin = false });
+        }
+
         /// <summary>
         /// Set Value for Username Control
         /// to get from another UserControl
