@@ -1,0 +1,16 @@
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\FEPV.Test.exe.config
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\FEPV.Test.exe
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\FEPV.Test.pdb
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\bin\Debug\Microsoft.Practices.CompositeUI.dll
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.csprojAssemblyReference.cache
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.MainForm.resources
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.MyControls.ucLogin.resources
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.MyControls.ucMain.resources
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.Properties.Resources.resources
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.csproj.GenerateResource.cache
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.csproj.CopyComplete
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.exe
+C:\Users\dungl\source\repos\FEPV.Test\FEPV.Test\obj\Debug\FEPV.Test.pdb
